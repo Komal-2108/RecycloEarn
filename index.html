@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RecycloEarn</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ <header>
+  <div class ="navbar">
+  <nav>
+      <h1>RecycloEarn</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <!-- <li><a href="#projects">Projects</a></li> -->
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    </div>
+
+    <div class="header-left">
+      <img src="images/logo.png" alt="RecycloEarn Logo" class="logo" />
+      <div>
+        <h1>RecycloEarn</h1>
+        <p class="tagline">Get Paid to Go Green</p>
+      </div>
+    </div>
+   
+    <div class="profile">
+      <img src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg" alt="Profile Picture" class="profile-pic" />
+      <p><strong>Name:</strong> Komal Kumari</p>
+      <p><strong>Enrollment No.:</strong> 0103CS241214</p>
+    </div>
+    
+  </header>
+  <main>
+    <div class="main-container">
+    <div class="features">
+      <div class="card">
+        <h2>Items Recycled</h2>
+        <p id="recycledCount">12</p>
+        <!-- <button onclick="addItem()">+ Add Item</button> -->
+      </div>
+
+      <div class="card">
+        <h2>Rewards Earned</h2>
+        <p id="rewardPoints">60</p>
+      </div>
+
+      <div class="card">
+        <h2>Target</h2>
+        <!-- <img src="images/target.jpg" alt = "target" class="symbol"/> -->
+          <p id="rewardPoints">100</p>
+        <!-- <input type="number" id="targetInput" placeholder="Enter Target">
+        <button onclick="setTarget()">Set Target</button>
+        <p id="targetStatus">No target set</p> -->
+      </div>
+
+      <div class="card">
+        <h2>Current Level</h2>
+        <progress id="levelBar" value="60" max="100"></progress>
+        <p id="levelText">Level 1</p>
+      </div>
+    </div>
+
+   <div class="leaderboard">
+  <h2>Leaderboard</h2>
+  <input type="text" id="searchInput" placeholder="Enter Enrollment Number..." onkeyup="searchStudent()">
+  <div class="leaderboard-scroll">
+    <ul id="leaderboard-list">
+  <li data-enroll="LNCT2024CSE085"><strong>1. </strong> Rohit Singh – 120 pts</li>
+  <li data-enroll="LNCT2024CSE014"><strong>2. </strong> Aryan Verma  – 95 pts</li>
+  <li data-enroll="LNCT2024CSE015"><strong>3. </strong> Priya Singh  – 87 pts</li>
+  <li data-enroll="LNCT2024CSE016"><strong>4. </strong> Neha Sharma  – 80 pts</li>
+  <li data-enroll="01013AL241324"><strong>5. </strong> Rahul Thakre – 72 pts</li>
+  <li data-enroll="LNCT2024CSE018"><strong>6. </strong> Deepak Gupta – 68 pts</li>
+  <li data-enroll="01013AL241375"><strong>7. </strong> Sejal Chaudhary  – 64 pts</li>
+  <li data-enroll="0103CS241214"><strong>8. </strong> Komal Kumari – 60 pts</li>
+  <li data-enroll="LNCT2024CSE021"><strong>9. </strong> Tanvi Patel  – 55 pts</li>
+  <li data-enroll="LNCT2024CSE022"><strong>10.</strong> Manav Jain  – 50 pts</li>
+</ul>
+
+    <div id="noData" style="display: none; color: red; font-weight: bold;">No data found</div>
+
+  </div>
+</div>
+</div>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe 
+    src="https://www.youtube.com/embed/cNPEH0GOhRw" 
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+    frameborder="0" 
+    allowfullscreen>
+  </iframe>
+</div>
+ <section id="about">
+    <h2>About Us</h2>
+    <p>
+Together we envision to reduce landfill waste, promote a circular economy, and make sustainability a part of everyday life.</p>
+<p class ="caption">Recycle Smart.Earn more.Savethe planet.</p>
+  </section>
+
+
+
+  <section id="contact">
+    <h2>Feedback </h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+ <div class="quote-container">
+  <p id="quote">"Recycling is a gift to our planet. Let’s wrap it with action."</p>
+  <span id="refreshQuote" title="Get new quote">🔄</span>
+</div>
+
+    <section class="call-to-action">
+      <p>Let’s work together for a greener planet.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 RecycloEarn. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
